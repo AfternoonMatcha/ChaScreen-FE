@@ -9,6 +9,17 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import { Spinner } from "~/components/ui/spinner";
+
+// 添加 HydrateFallback 组件，用于在 SPA 模式下初始加载时显示
+export function HydrateFallback() {
+  return (
+    <div className="flex min-h-svh items-center justify-center gap-4">
+      <Spinner className="size-12" />
+      <p className="text-4xl font-bold mb-4 mt-4">Loading...</p>
+    </div>
+  );
+}
 
 export const links: Route.LinksFunction = () => [
   // 添加网站图标
