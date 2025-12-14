@@ -1,6 +1,6 @@
 import { Link, Outlet } from "react-router";
-import { Button } from "~/components/ui/button";
-import Logo from '~/assets/images/LOGO.svg';
+import { Button } from "@/components/ui/button";
+import Logo from '@/assets/images/LOGO.svg';
 
 export function MainLayout() {
   return (

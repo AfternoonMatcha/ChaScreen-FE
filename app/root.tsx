@@ -9,8 +9,8 @@ import {
 import type { Route } from "./+types/root";
 import "./assets/fonts/fonts.css";
 import "./app.css";
-import { Spinner } from "~/components/ui/spinner";
-import { MainLayout } from "~/components/layout/main-layout";
+import { Spinner } from "@/components/ui/spinner";
+import { MainLayout } from "@/components/layout/main-layout";
 
 // 添加 HydrateFallback 组件，用于在 SPA 模式下初始加载时显示
 export function HydrateFallback() {

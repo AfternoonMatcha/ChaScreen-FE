@@ -1,4 +1,5 @@
 import type { Route } from "./+types/home"
+import Card from "@/components/card"
 
 // 定义页面的元数据函数
 export function meta({ }: Route.MetaArgs) {
@@ -11,12 +12,8 @@ export function meta({ }: Route.MetaArgs) {
 export default function Home() {
   return (
     <main className="flex-1 p-[10px] flex gap-[10px] flex-col md:flex-row">
-      <article className="min-w-[300px] border rounded-[5px] p-[20px] pt-[30px]">
-        <div className="text-[23px]">选择影厅</div>
-      </article>
-      <article className="flex-1 border rounded-[5px] p-[20px] pt-[30px]">
-        <div className="text-[23px]">CINITY LED 杜比全景声厅 沙发软座</div>
-      </article>
+      <Card title="选择影厅" className="min-w-[300px]" />
+      <Card title="CINITY LED 杜比全景声厅 沙发软座" className="flex-1" />
     </main>
   )
 }
